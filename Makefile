@@ -150,6 +150,33 @@ Socket.cc.s:
 	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/Socket.cc.s
 .PHONY : Socket.cc.s
 
+TcpServer.o: TcpServer.cc.o
+
+.PHONY : TcpServer.o
+
+# target to build an object file
+TcpServer.cc.o:
+	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/TcpServer.cc.o
+.PHONY : TcpServer.cc.o
+
+TcpServer.i: TcpServer.cc.i
+
+.PHONY : TcpServer.i
+
+# target to preprocess a source file
+TcpServer.cc.i:
+	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/TcpServer.cc.i
+.PHONY : TcpServer.cc.i
+
+TcpServer.s: TcpServer.cc.s
+
+.PHONY : TcpServer.s
+
+# target to generate assembly for a file
+TcpServer.cc.s:
+	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/TcpServer.cc.s
+.PHONY : TcpServer.cc.s
+
 main.o: main.cc.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... Socket.o"
 	@echo "... Socket.i"
 	@echo "... Socket.s"
+	@echo "... TcpServer.o"
+	@echo "... TcpServer.i"
+	@echo "... TcpServer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

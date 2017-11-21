@@ -8,10 +8,12 @@ endif()
 
 set(SRCS
 main.cc
-Socket.cc)
+Socket.cc
+TcpServer.cc)
 
 set(HEADER
 Socket.h
+TcpServer.h
 )
 
 set(CXX_FLAGS
